@@ -1,12 +1,12 @@
-OmniAuth Toodledo
-================
+# OmniAuth Toodledo #
+
+[![Build Status](https://secure.travis-ci.org/alswl/omniauth-toodledo.png?branch=develop)](http://travis-ci.org/alswl/omniauth-toodledo)
 
 This gem is an OmniAuth 1.0 Strategy for the [Toodledo][toodledo].
 
 It supports version 2 of the Toodledo API.
 
-Usage
------
+## Usage ##
 
 Add the strategy to your `Gemfile` alongside OmniAuth:
 
@@ -35,8 +35,7 @@ You will have to put in your app id and token.
 
 For additional information, refer to the [Developer's API Documentation][doc].
 
-Note on Patches/Pull Requests
------------------------------
+## Note on Patches/Pull Requests ##
 
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -46,8 +45,7 @@ Note on Patches/Pull Requests
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-LICENSE
----------
+## LICENSE ##
 
 License under The MIT License. See [LICENSE](license) for details.
 
