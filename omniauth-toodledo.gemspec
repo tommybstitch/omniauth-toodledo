@@ -27,4 +27,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'yard'
   gem.add_development_dependency 'webmock'
+
+  if defined?(RUBY_ENGINE) && RUBY_ENGINE == 'jruby'
+    gem.add_runtime_dependency 'jruby-openssl'
+  end
 end
