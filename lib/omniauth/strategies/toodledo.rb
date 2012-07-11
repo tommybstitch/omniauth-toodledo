@@ -8,6 +8,7 @@ module OmniAuth
     class Toodledo
       include OmniAuth::Strategy
 
+      args [:app_id, :app_token]
       option :fields, [:email, :password]
       option :app_id, nil
       option :app_token, nil
@@ -18,7 +19,7 @@ module OmniAuth
         :authorize_path => '/2/account/token.php',
         :lookup_path => '/2/account/lookup.php',
         :account_info_path => '/2/account/get.php',
-        :site => "http://api.toodledo.com",
+        :site => "https://api.toodledo.com",
       }
 
       def request_phase
