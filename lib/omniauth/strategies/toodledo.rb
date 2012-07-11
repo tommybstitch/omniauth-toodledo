@@ -8,7 +8,6 @@ module OmniAuth
     class Toodledo
       include OmniAuth::Strategy
 
-      args [:app_id, :app_token]
       option :fields, [:email, :password]
       option :app_id, nil
       option :app_token, nil

@@ -21,7 +21,7 @@ Then integrate the strategy into your middleware:
 
 ```ruby
 use OmniAuth::Builder do
-  provider :toodledo, ENV['TOODLEDO_APP_ID'], ENV['TOODLEDO_APP_TOKEN']
+  provider :toodledo, app_id => ENV['TOODLEDO_APP_ID'], app_token => ENV['TOODLEDO_APP_TOKEN']
 end
 ```
 
