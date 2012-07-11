@@ -37,6 +37,16 @@ You will have to put in your app id and token.
 
 For additional information, refer to the [Developer's API Documentation][doc].
 
+## Supported Ruby Versions ##
+
+OmniAuth-Toodledo is tested under 1.9.2, 1.9.3, JRuby (1.9 mode),
+and Rubinius (1.9 modes).
+
+With some problem (the shit ";" in toodledo url, and Hash in 1.8 is disordered,
+ruby 1.9 fixed it. This didn't influence the lib, but can't pass webmock/spec),
+OmniAuth-Toodledo test fail in 1.8.
+You can try it yourself in 1.8, and please tell me it works.
+
 ## Note on Patches/Pull Requests ##
 
 * Fork the project.
