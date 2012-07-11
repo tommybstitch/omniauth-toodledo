@@ -1,6 +1,6 @@
 # OmniAuth Toodledo #
 
-[![Build Status](https://secure.travis-ci.org/alswl/omniauth-toodledo.png?branch=develop)](http://travis-ci.org/alswl/omniauth-toodledo)
+[![Build Status](https://secure.travis-ci.org/alswl/omniauth-toodledo.png?branch=master)](http://travis-ci.org/alswl/omniauth-toodledo)
 
 [![Dependency status][gemnasium-image]][gemnasium-url]
 
