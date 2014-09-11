@@ -30,7 +30,7 @@ module OmniAuth
       extra { raw_info }
 
       def raw_info
-        @raw_info ||= access_token.get("http://api.toodledo.com/3/account/get.php").body
+        @raw_info ||= access_token.get("http://api.toodledo.com/3/account/get.php").body.to_json
       end
 
     end
