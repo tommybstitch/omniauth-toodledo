@@ -30,7 +30,7 @@ module OmniAuth
       extra { raw_info }
       
       def raw_info
-        @raw_info ||= eval(access_token.get("http://api.toodledo.com/3/account/get.php").body)
+        @raw_info ||= JSON.parse(access_token.get("http://api.toodledo.com/3/account/get.php").body)
         
         Rails.logger.info "*************"
         Rails.logger.info @raw_info
