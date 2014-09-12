@@ -9,7 +9,7 @@ module OmniAuth
     class Toodledo < OmniAuth::Strategies::OAuth2
 
       option :name, :toodledo
-      option :provider, :toodledo
+      option :provider, 'toodledo'
 
       option :client_options, {
         :site          => 'https://api.toodledo.com',
