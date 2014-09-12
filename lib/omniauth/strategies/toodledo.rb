@@ -16,7 +16,7 @@ module OmniAuth
         :token_url     => '/3/account/token.php'
       }
 
-      uid do { raw_info["userid"] } end
+      uid { raw_info["userid"] }
       
       info do
         {
@@ -31,10 +31,6 @@ module OmniAuth
       
       def raw_info
         @raw_info ||= JSON.parse(access_token.get("http://api.toodledo.com/3/account/get.php").body)
-        
-        Rails.logger.info "*************"
-        Rails.logger.info @raw_info
-        Rails.logger.info @raw_info.class
       end
     end
   end
