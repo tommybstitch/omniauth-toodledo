@@ -16,7 +16,7 @@ module OmniAuth
         :token_url     => '/3/account/token.php'
       }
 
-      uid { raw_info["id"] }
+      uid { raw_info["userid"] }
       
       info do
         {
