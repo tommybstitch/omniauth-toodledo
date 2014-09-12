@@ -20,10 +20,9 @@ module OmniAuth
 
       info do
         {
-          :email    => raw_info["user"]["email"],
-          :name     => raw_info["user"]["display_name"],
-          :nickname => raw_info["user"]["username"],
-          :image    => raw_info["user"]["avatar"]
+          :email    => raw_info["email"],
+          :name     => raw_info["alias"],
+          :nickname => raw_info["alias"]
         }
       end
 
@@ -31,8 +30,6 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= access_token.get("http://api.toodledo.com/3/account/get.php").body
-        Rails.logger.info "***************"
-        Rails.logger.info @raw_info
       end
 
     end
