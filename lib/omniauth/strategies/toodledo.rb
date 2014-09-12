@@ -17,7 +17,10 @@ module OmniAuth
       }
 
       uid { raw_info["id"] }
-
+      
+      Rails.logger.info "***************"
+      Rails.logger.info uid
+      
       info do
         {
           :email    => raw_info["email"],
@@ -25,6 +28,9 @@ module OmniAuth
           :nickname => raw_info["alias"]
         }
       end
+      
+      Rails.logger.info "***************"
+      Rails.logger.info info
 
       extra { raw_info }
 
