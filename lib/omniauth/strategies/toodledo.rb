@@ -28,13 +28,16 @@ module OmniAuth
       
 
       extra { raw_info }
-
+      debug_info
+      
       def raw_info
         @raw_info ||= access_token.get("http://api.toodledo.com/3/account/get.php").body
       end
       
-      Rails.logger.info "***************"
-      Rails.logger.info self
+      def debug_info
+        Rails.logger.info "***************"
+        Rails.logger.info self
+      end
     end
   end
 end
