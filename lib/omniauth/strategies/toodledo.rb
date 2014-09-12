@@ -18,9 +18,6 @@ module OmniAuth
 
       uid { raw_info["id"] }
       
-      Rails.logger.info "***************"
-      Rails.logger.info uid
-      
       info do
         {
           :email    => raw_info["email"],
@@ -29,15 +26,15 @@ module OmniAuth
         }
       end
       
-      Rails.logger.info "***************"
-      Rails.logger.info info
 
       extra { raw_info }
 
       def raw_info
         @raw_info ||= access_token.get("http://api.toodledo.com/3/account/get.php").body
       end
-
+      
+      Rails.logger.info "***************"
+      Rails.logger.info self
     end
   end
 end
